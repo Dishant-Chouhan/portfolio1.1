@@ -20,3 +20,11 @@ gsap.from(".circle", {
     opacity: 0,
     duration:1
 });
+
+gsap.from(".image",{
+    scale:0,
+    scrollTrigger:{
+        trigger: ".image",
+        scroller: "body"
+    }
+})

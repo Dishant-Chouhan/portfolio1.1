@@ -359,6 +359,10 @@ main {
     transform: scale(0.95); 
 }
 
+.btn button a {
+    text-decoration: none;
+    color: inherit;
+}
 @media (max-width :800px){
     #experience h1, .content h1{
         font-size: 4vh;
