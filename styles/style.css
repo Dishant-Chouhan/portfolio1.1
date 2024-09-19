@@ -1,0 +1,105 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Custom styles go below */
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* loader */
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ffffff;
+    border-top: 6px solid #FF7043;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* loader end */
+
+/* page 1 start */
+.page1{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.page1 nav {
+    width: 80%;
+    display: flex;
+    border-radius: 25px;
+    background: #171717;
+    padding: 1.5vh 2vw;
+    position: relative;
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation links styling */
+.page1 nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    font-weight: 400;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.page1 nav a:hover {
+    background-color: #43B0FF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active link style */
+.page1 nav a.active {
+    background-color: #206596;
+    font-weight: 500;
+}
