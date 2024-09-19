@@ -359,6 +359,22 @@ main {
     transform: scale(0.95); 
 }
 
+@media (max-width :800px){
+    #experience h1, .content h1{
+        font-size: 4vh;
+    }
+
+    .content p{
+        font-size: 2vh;
+    }
+
+    .circle{
+        height: 380px;
+        width: 380px;
+        top: 55%;
+    }
+}
+
 @media (max-width: 600px) {
     .menuIcon {
         display: flex;
@@ -371,5 +387,30 @@ main {
     .menuTray a {
         font-size: 6vw;
         padding: 2vh 6vw;
+    }
+
+    .part1-2{
+        flex-direction: column;
+    }
+
+    #comment{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+
+    #experience h1, .content h1{
+        font-size: 4vh;
+    }
+
+    .content p{
+        font-size: 2vh;
+    }
+
+    .circle{
+        height: 380px;
+        width: 380px;
+        top: 55%;
     }
 }
