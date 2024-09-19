@@ -10,11 +10,14 @@ body {
     height: 100%;
     width: 100%;
 }
-
+img{
+    user-select: none;
+    pointer-events: none;
+}
 /* Custom styles go below */
 main {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 /* loader */
@@ -180,8 +183,181 @@ main {
     font-weight: 600;
 }
 
+/* page 1 part 1  */
+.page1 .part1 {
+    height: 90%;
+    width: 100%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
 
 
+.part1 .hello {
+    overflow: hidden;
+    display: flex;
+    padding: 8px 15px;
+    border: 2px solid;
+    border-radius: 25px;
+    position: relative;
+}
+
+.part1 .hello h2 {
+    height: fit-content;
+    overflow: hidden;
+}
+
+.name{
+    height: fit-content;
+    overflow: hidden;
+}
+
+.name .h1{
+    font-size: 6vw;
+}
+
+.profession{
+    height: fit-content;
+    overflow: hidden;
+}
+
+.profession .h1{
+    font-size: 4vw;
+}
+
+.part1-2{
+    padding: 0 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    color: #171717da;
+    font-family: "SUSE", sans-serif;
+}
+
+.content h1{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 2vw;
+    color: #171717e0;
+}
+
+.experience i{
+    background-clip: text;
+    color: transparent;
+    background-color: #43B0FF;
+    overflow: hidden;
+    font-size: 2vw;
+}
+
+#experience h1{
+    font-size: 2vw;
+    color: #43B0FF;
+    margin-top: 2%;
+}
+
+/* profile image circle*/
+.circle img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.circle{
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    background: #43B0FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Button container */
+.btn{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #9794a854;
+    padding: 12px 25px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
+
+/*  button */
+.btn .Resume {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    background-color: #189EFE;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn .Resume::after {
+    content: '→'; /* Arrow symbol */
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn .Resume:hover::after {
+    transform: translateX(5px); /* Animate arrow on hover */
+}
+
+/* Hire Me button */
+.btn .hire-me {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #94ccf3;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn .hire-me:hover {
+    background-color: #d3d3d3;
+    color: #000000;
+    border-color: #d3d3d3;
+}
+
+.btn .Resume:active, 
+.btn .hire-me:active {
+    transform: scale(0.95); 
+}
 
 @media (max-width: 600px) {
     .menuIcon {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,44 +13,91 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
 </head>
+
 <body>
     <main>
         <div class="loader">
             <div class="spinner"></div>
         </div>
 
-    <div class="page1">
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Resume</a>
-            <a href="#">Projects</a>
-            <a href="#">contact</a>
-        </nav>
+        <div class="page1">
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Resume</a>
+                <a href="#">Projects</a>
+                <a href="#">contact</a>
+            </nav>
 
-        <!-- menu icon from here -->
-        <div class="menuIcon">
-            <i class="ri-menu-3-line" style="user-select: none;"></i>
+            <!-- menu icon from here -->
+            <div class="menuIcon">
+                <i class="ri-menu-3-line" style="user-select: none;"></i>
+            </div>
+
+            <!-- menu tray stylling -->
+            <div class="menuTray">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Resume</a>
+                <a href="#">Projects</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="part1">
+                <div class="hello">
+                    <h2>hello !</h2>
+                </div>
+
+                <div class="name">
+                    <h1 class="h1">I'm <span style="color: #189EFE;">Dishant</span>,</h1>
+                </div>
+
+                <div class="profession">
+                    <h1 class="h1">Data Engineer & Data Scientist</h1>
+                </div>
+
+                <div class="part1-2">
+
+                    <div class="content" id="comment">
+                        <h1>what clients say</h1>
+                        <!-- add your comment here -->
+                        <p>
+                            "Dishant consistently delivers high-quality data solutions that are both innovative and
+                            efficient. His expertise in machine learning and big data technologies makes him a valuable
+                            asset to any project."
+                        </p>
+                    </div>
+
+                    <div class=" content" id="experience">
+                        <h1>Experience</h1>
+                        <p>"Currently pursuing a B.Tech in Computer Science with a specialization in Data Science, I
+                            blend academic knowledge with real-world applications."</p>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <div class="circle">
+                <img src="./assets/images/image.png" alt="">
+            </div>
+
+            <div class="btn">
+                <button class="Resume">download CV</button>
+                <button class="hire-me">Hire Me</button>
+            </div>
         </div>
 
-        <!-- menu tray stylling -->
-        <div class="menuTray">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Resume</a>
-            <a href="#">Projects</a>
-            <a href="#">contact</a>
-        </div>
-    </div>
     </main>
 
     <!-- gsap files -->
     <script src="/scripts/gsap.min.js"></script>
     <script src="/scripts/ScrollTrigger.min.js"></script>
-<!-- local scripts -->
+    <!-- local scripts -->
     <script src="/scripts/script.js"></script>
     <script src="/scripts/animation.js"></script>
 </body>
+
 </html>
