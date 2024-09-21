@@ -28,3 +28,23 @@ gsap.from(".image",{
         scroller: "body"
     }
 })
+
+tl1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page3",
+        scroller: "body",
+        start: "top -2%",
+        end: "bottom -100%",
+        scrub: 1,
+        pin: true
+    }
+})
+tl1.to(".card-container", {
+    x: "-550%",
+},"a");
+tl1.to(".roter", {
+    rotate:360,
+},"a");
+tl1.to(".right-roter", {
+    rotate:360,
+},"a");
