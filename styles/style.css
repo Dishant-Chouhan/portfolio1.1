@@ -1,4 +1,9 @@
-/* Reset CSS */
+@font-face {
+    font-family: 'ProtestGuerilla';
+    src: url(../assets/fonts/ProtestGuerrilla-Regular.ttf) format('truetype');
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -228,12 +233,11 @@ main {
 }
 
 .part1-2{
-    padding: 0 5%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1%;
+
 }
 
 .content{
@@ -250,6 +254,9 @@ main {
     font-family: "Protest Guerrilla", sans-serif;
     font-size: 2vw;
     color: #171717e0;
+}
+.content p{
+    font-size: 1.5vw;
 }
 
 .experience i{

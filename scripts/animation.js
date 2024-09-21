@@ -48,3 +48,27 @@ tl1.to(".roter", {
 tl1.to(".right-roter", {
     rotate:360,
 },"a");
+
+var tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page4",
+        scroller: "body",
+        start: "top 0%",
+        end: "bottom -100%",
+        scrub: 2,
+        pin: true
+    }
+});
+
+tl2.to(".crt-top",{
+    top: "-100%",
+},"a")
+.to(".crt-btm",{
+    bottom: "-100%",
+},"a")
+.to(".crt-top h1",{
+    top:"150%",
+},"a")
+.to(".crt-btm h1",{
+    top:"-90%",
+},"a")

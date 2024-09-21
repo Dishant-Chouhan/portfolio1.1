@@ -27,7 +27,6 @@
 .swiper{
     width: 100%;
     height: 69%;
-    margin-top: 4%;
     display: flex;
     align-items: center;
     gap: 4vw;
@@ -124,14 +123,14 @@
         left: 10%;
     }
     .right-roter{
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         top: 15%;
         left:90%;
     }
 }
 
-@media (max-width : 768px){
+@media (max-width : 768px),(min-height:600px){
     .roter{
         height: 150px;
         width: 150px;

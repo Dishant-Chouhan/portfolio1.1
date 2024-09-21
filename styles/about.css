@@ -53,6 +53,7 @@
 @media (max-width :800px){
     .page2{
         flex-direction: column;
+        height: 80%;
     }
     .abt-left{
         display: none;
@@ -63,6 +64,6 @@
 
     .abt-right p{
         text-align: center;
-        font-size: 3vh;
+        font-size:2vh;
     }
 }

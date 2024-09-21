@@ -1,0 +1,57 @@
+.page4{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.curtain{
+    background-color: #fff;
+    width: 100%;
+    height: 50vh;
+    z-index: +999;
+}
+
+.curtain h1{
+    font-size: 15vw;
+    text-transform: uppercase;
+    font-family: "ProtestGuerilla";
+    font-weight: 400;
+    pointer-events: none;
+    user-select: none;
+}
+
+.crt-top{
+    position: absolute;
+    top:0%;
+    overflow: hidden;
+}
+
+.crt-top h1{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.acad-content{
+    height: 100%;
+    width: 100%;
+    background: #F3F4F8;
+}
+
+
+
+.crt-btm{
+    position: absolute;
+    bottom: 0%;
+    overflow: hidden;
+}
+
+.crt-btm h1{
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
