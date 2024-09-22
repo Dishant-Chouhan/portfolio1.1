@@ -3,13 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dishant Chouhan</title>
     <!-- stylesheets -->
     <link rel="shortcut icon" href="/assets/images/FAVICON.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/about.css">
-    <link rel="stylesheet" href="/styles/services.css">
     <link rel="stylesheet" href="/styles/academics.css">
 
     <!-- remix icon -->
@@ -23,13 +21,13 @@
             <div class="spinner"></div>
         </div>
 
-        <div class="page1">
+        <div class="page1" id="home">
             <nav>
                 <a href="/index.html" class="active">Home</a>
-                <a href="/pages/about.html">About</a>
-                <a href="#">Services</a>
-                <a href="#">Resume</a>
-                <a href="#">Projects</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="/files/Dishant_Chouhan__Resume.pdf" download="Dishant_Resume.pdf">Resume</a>
+                <a href="#projects">Projects</a>
                 <a href="#">contact</a>
             </nav>
 
@@ -40,11 +38,11 @@
 
             <!-- menu tray stylling -->
             <div class="menuTray">
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Resume</a>
-                <a href="#">Projects</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="/files/Dishant_Chouhan__Resume.pdf" download="Dishant_Resume.pdf">Resume</a>
+                <a href="#projects">Projects</a>
                 <a href="#">contact</a>
             </div>
 
@@ -94,7 +92,7 @@
             </div>
         </div>
 
-        <div class="page2">
+        <div class="page2" id="about">
             <div class="abt-left">
                 <div class="image">
                     <img src="/assets/images/image.png" alt="">
@@ -115,9 +113,10 @@
             </div>
         </div>
 
-        <div class="page3">
+        <div class="page3" id="services">
             <h1>My <span style="color: #189EFE;">Services</span></h1>
-            <p>"From data architecture to machine learning models, explore services designed to transform your business with precision and efficiency."</p>
+            <p>"From data architecture to machine learning models, explore services designed to transform your business
+                with precision and efficiency."</p>
 
 
             <div class="swiper">
@@ -204,34 +203,180 @@
                 </div>
             </div>
 
-<div class="roter">
+            <div class="roter">
 
-</div>
-<div class="right-roter"></div>
+            </div>
+            <div class="right-roter"></div>
         </div>
 
         <div class="page4">
-                <div class="curtain crt-top">
-                    <h1>Acad<span style="color: #189EFE;">emics</span></h1>
+            <div class="curtain crt-top">
+                <h1>Acad<span style="color: #189EFE;">emics</span></h1>
+            </div>
+
+            <div class="acad-content">
+                <div class="academics-section">
+                    <h2>Academics</h2>
+                    <div class="timeline">
+                        <div class="timeline-item" onclick="toggleDetails('details1')">
+                            <h3>B.Tech in Computer Science</h3>
+                            <p class="year">2019 - Present</p>
+                            <div id="details1" class="details">
+                                <p>Specialization in Data Science. Key courses include Advanced Machine Learning, Big
+                                    Data Analytics, and Data Visualization.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" onclick="toggleDetails('details2')">
+                            <h3>High School</h3>
+                            <p class="year">2017 - 2019</p>
+                            <div id="details2" class="details">
+                                <p>Focus on Mathematics, Physics, and Computer Science. Graduated with honors.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="acad-content">
-    
-                </div>
-    
-                <div class="curtain crt-btm">
-                    <h1>Acad<span style="color: #189EFE;">emics</span></h1>
-                </div>
-    
+
+            </div>
+
+            <div class="curtain crt-btm">
+                <h1>Acad<span style="color: #189EFE;">emics</span></h1>
+            </div>
         </div>
+
+        <div class="page5">
+            <div class="skills">
+                <div class="skills-section">
+                    <h2>Professional Skills</h2>
+                    <div class="skill-container">
+                        <div class="skill" data-skill="Python">
+                            <div class="skill-level" style="width: 90%;">Python</div>
+                        </div>
+                        <div class="skill" data-skill="SQL">
+                            <div class="skill-level" style="width: 85%;">SQL</div>
+                        </div>
+                        <div class="skill" data-skill="Machine Learning">
+                            <div class="skill-level" style="width: 80%;">Machine Learning</div>
+                        </div>
+                        <div class="skill" data-skill="Data Visualization">
+                            <div class="skill-level" style="width: 75%;">Data Visualization</div>
+                        </div>
+                        <div class="skill" data-skill="Big Data Technologies">
+                            <div class="skill-level" style="width: 70%;">Big Data Technologies</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="certifications">
+                <div class="certifications-section">
+                    <h2>Certifications</h2>
+                    <ul>
+                        <li>
+                            <strong>Data Science Professional Certificate</strong> - IBM
+                            <span class="year">2022</span>
+                            <p>A comprehensive series of courses covering key data science topics including machine
+                                learning, big data analysis, and statistical analysis.</p>
+                        </li>
+                        <li>
+                            <strong>Google Cloud Professional Data Engineer</strong> - Google Cloud
+                            <span class="year">2021</span>
+                            <p>Validates skills in designing and building data processing systems, and operationalizing
+                                machine-learning models.</p>
+                        </li>
+                        <li>
+                            <strong>Machine Learning Specialization</strong> - Stanford Online
+                            <span class="year">2020</span>
+                            <p>Series of courses focused on the practical application of machine learning, clustering
+                                and classification algorithms, and system design.</p>
+                        </li>
+                        <li>
+                            <strong>Advanced SQL for Data Scientists</strong> - DataCamp
+                            <span class="year">2020</span>
+                            <p>Enhanced SQL queries and analytic functions, optimized for complex data gathering and
+                                analytics.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="projects" id="projects">
+                <div class="projects-section">
+                    <h2>Key Projects</h2>
+                    <div class="project-list">
+                        <div class="project" onclick="openModal('project1')">
+                            <img src="/assets/images/Real.jpeg" alt="Project 1 Image">
+                            <div class="project-info">
+                                <h3>Real-Time Data Processing System</h3>
+                                <p>Designed and implemented a real-time data processing system using Apache Kafka and
+                                    Spark.</p>
+                            </div>
+                        </div>
+                        <div class="project" onclick="openModal('project2')">
+                            <img src="/assets/images/ML.jpeg" alt="Project 2 Image">
+                            <div class="project-info">
+                                <h3>Machine Learning Deployment</h3>
+                                <p>Developed and deployed a machine learning model to predict customer churn using
+                                    Python and AWS.</p>
+                            </div>
+                        </div>
+                        <div class="project" onclick="openModal('project3')">
+                            <img src="/assets/images/davd.jpeg" alt="Project 3 Image">
+                            <div class="project-info">
+                                <h3>Data Visualization Dashboard</h3>
+                                <p>Created interactive dashboards for data analysis using Power BI, enhancing business
+                                    decision-making.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Structure (hidden initially) -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Project Title</h2>
+                        <p>Project Description Here...</p>
+                        <img src="path_to_detailed_image.jpg" alt="Detailed Project Image">
+                    </div>
+                </div>
+
+            </div>
+<div class="contact-footer">
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, please feel free to drop me a line. I'll get back to you as soon as I can. That's a promise!</p>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 by Dishant Chouhan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/dishant">LinkedIn</a>
+            <a href="https://github.com/dishant">GitHub</a>
+            <a href="https://twitter.com/dishant">Twitter</a>
+        </div>
+    </footer>
+    
+</div>
+        </div>
+
+        <div class="contact">
+            
+        </div>
+
     </main>
 
     <!-- gsap files -->
-    <script src="/scripts/gsap.min.js"></script>
-    <script src="/scripts/ScrollTrigger.min.js"></script>
+    <script src="./scripts/gsap.min.js"></script>
+    <script src="./scripts/ScrollTrigger.min.js"></script>
     <!-- local scripts -->
-    <script src="/scripts/script.js"></script>
     <script src="/scripts/animation.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 
 </html>

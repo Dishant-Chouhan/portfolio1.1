@@ -32,4 +32,61 @@ document.addEventListener("DOMContentLoaded", function () {
             menuIconContainer.style.backgroundColor = "#171717";
         });
 })
+
+function toggleDetails(detailsId) {
+    var details = document.getElementById(detailsId);
+    details.style.display = details.style.display === 'block' ? 'none' : 'block';
+}
+
+var tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page4",
+        scroller: "body",
+        start: "top 0%",
+        end: "bottom -100%",
+        scrub: 2,
+        pin: true
+    }
+});
+
+tl2.to(".crt-top",{
+    top: "-100%",
+},"a")
+.to(".crt-btm",{
+    bottom: "-100%",
+},"a")
+.to(".crt-top h1",{
+    top:"150%",
+},"a")
+.to(".crt-btm h1",{
+    top:"-90%",
+},"a")
+.from(".acad-content",{
+    y:"100%",
+}, "a")
+
+
+
+
+
+var tl3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page5",
+        scroller: "body",
+        start: "top 0%",
+        end: "bottom -100%",
+        scrub: 2,
+        pin: true
+    }
+});
+ tl3.from(".certifications",{
+    y:"100%",
+ })
+ tl3.from(".projects",{
+    y:"100%",
+ })
+ tl3.from(".contact-footer",{
+    y:"100%",
+ })
 })
+

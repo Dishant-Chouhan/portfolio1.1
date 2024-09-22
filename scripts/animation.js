@@ -28,12 +28,20 @@ gsap.from(".image",{
         scroller: "body"
     }
 })
+gsap.from(".abt-right p",{
+    scale:0,
+    stagger: true,
+    scrollTrigger:{
+        trigger: ".abt-right p",
+        scroller: "body"
+    }
+})
 
 tl1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".page3",
         scroller: "body",
-        start: "top -2%",
+        start: "top 0%",
         end: "bottom -100%",
         scrub: 1,
         pin: true
@@ -49,26 +57,4 @@ tl1.to(".right-roter", {
     rotate:360,
 },"a");
 
-var tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".page4",
-        scroller: "body",
-        start: "top 0%",
-        end: "bottom -100%",
-        scrub: 2,
-        pin: true
-    }
-});
 
-tl2.to(".crt-top",{
-    top: "-100%",
-},"a")
-.to(".crt-btm",{
-    bottom: "-100%",
-},"a")
-.to(".crt-top h1",{
-    top:"150%",
-},"a")
-.to(".crt-btm h1",{
-    top:"-90%",
-},"a")
