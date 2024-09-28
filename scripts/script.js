@@ -83,7 +83,7 @@ var tl3 = gsap.timeline({
     y:"100%",
  })
  tl3.from(".projects",{
-    y:"100%",
+    y:"300%",
  })
  tl3.from(".contact-footer",{
     y:"100%",
