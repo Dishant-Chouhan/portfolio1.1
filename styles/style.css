@@ -949,6 +949,9 @@ main {
     z-index: 7; /* removed the + sign for better compatibility */
     position: absolute;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -1025,22 +1028,7 @@ main {
     color: #000;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .project {
-        width: 45%; /* more suitable for tablets */
-    }
-}
 
-@media (max-width: 480px) {
-    .project {
-        width: 90%; /* takes more space on smaller screens */
-    }
-    .modal-content {
-        margin: 10% auto; /* adjusted for mobile visibility */
-        width: 95%; /* almost full width on small screens */
-    }
-}
 
 .contact-footer{
     background-color: #fff;
@@ -1145,9 +1133,18 @@ footer p {
 
 
 
+/* Responsive Adjustments */
 
-/* Responsive adjustments */
 
+@media (max-width: 480px) {
+    .project {
+        width: 90%; /* takes more space on smaller screens */
+    }
+    .modal-content {
+        margin: 10% auto; /* adjusted for mobile visibility */
+        width: 95%; /* almost full width on small screens */
+    }
+}
 
 @media (max-width: 600px) {
     .menuIcon {
@@ -1231,72 +1228,13 @@ footer p {
 }
 }
 
-
-@media (max-width :800px){
-
-    #comment{
-        display: none;
+@media (max-width: 768px) {
+    .project {
+        width: 45%; /* more suitable for tablets */
     }
-
-    #experience h1, .content h1{
-        font-size: 4vh;
-    }
-
-    .content p{
-        font-size: 2vh;
-        text-align: center;
-    }
-
-    .circle{
-        height: 380px;
-        width: 380px;
-        top: 55%;
-    }
-/* page 2 about page */
-    .page2{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        height: 80%;
-    }
-    .abt-left{
-        display: none;
-    }
-    .abt-right{
-        width: 100%;
-    }
-
-    .abt-right p{
-        text-align: center;
-        font-size:2vh;
-    }
-
-    .roter{
-        top: 20%;
-        height: 100px;
-        width: 100px;
-    }
-    .right-roter{
-        top: 20%;
-        width: 100px;
-        height: 100px;
-    }
-
-    .crt-top h1{
-        top: 90%;
-        font-size: 10vh;
-    }
-    .crt-btm h1{
-        top: -10%;
-        font-size: 10vh;
-    }
-
 }
 
-@media (max-width: 1440px){
 
-}
 
 
 
