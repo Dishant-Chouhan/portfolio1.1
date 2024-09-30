@@ -5,10 +5,35 @@
 * Browsers: last 4 version
 */
 
-@font-face {
-    font-family: 'ProtestGuerilla';
-    src: url(../assets/fonts/ProtestGuerrilla-Regular.ttf) format('truetype');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.font-1 {
+    font-family: "Fredoka", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
 }
+.font-2 {
+    font-family: "Fredoka", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+.font-3 {
+    font-family: "Fredoka", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+  
+
+@font-face {
+    src: url(../assets/fonts/ProtestGuerrilla-Regular.ttf) format('truetype');
+    font-family: 'ProtestGuerilla';
+} 
 
 
 * {
@@ -354,6 +379,7 @@ main {
 
 .content{
     width: 30%;
+    padding: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -400,7 +426,7 @@ main {
     height: 100%;
     width: 100%;
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
 }
 
 .circle{
@@ -560,11 +586,15 @@ main {
     background: #189EFE;
     padding: 0% 2%;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .image img{
     height: 100%;
-    width: 100%;
+    width: 110%;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -594,7 +624,7 @@ main {
 
 .abt-right p{
     width: 90%;
-    text-align: center;
+    text-align: justify !important;
     margin-top: 8%;
     font-size: 1.5vw;
 }
@@ -905,6 +935,7 @@ main {
     align-items: center;
     justify-content: center;
     background:#fafafa;
+    overflow-y: auto;
 }
 
 .certifications-section {
@@ -974,6 +1005,7 @@ main {
 
 .project {
     width: 30%;
+    min-width: 300px;
     margin: 10px;
     background-color: #fff;
     border-radius: 8px;
@@ -1137,7 +1169,16 @@ footer p {
 
 
 @media (max-width: 480px) {
+    .certifications-section ul {
+        margin-top: 15%;
+    }
+
+    .project-list  {
+    margin-top: 21%;
+    }
+    
     .project {
+        margin-top: 10%;
         width: 90%; /* takes more space on smaller screens */
     }
     .modal-content {
@@ -1173,8 +1214,12 @@ footer p {
     }
     .content{
         width: 100%;
+        display: none;
     }
 
+    #experience{
+        display: block;
+    }
     #experience h1, .content h1{
         margin-top: 10%;
         text-align: center;
@@ -1198,43 +1243,100 @@ footer p {
 
     .page3 p{
         font-size: 2vh;
+        width: 75%;
+        text-align: justify;
+        margin-top: 5%;
+    }
+    .page4 .academics-section{
         width: 100%;
+    }
+    .page4 .academics-section .timeline {
+        width: 100%;
+    }
+
+    .page5 .skills .skills-section {
+        width: 90%;
     }
 .swiper{
     margin-top: 20%;
 }
 
     .roter{
-        display: none;
+        height: 50px;
+        width: 50px;
     }
     .right-roter{
-        display: none;
+        width: 50px;
+        height: 50px;
+    }
+    .crt-btm h1{
+        font-size: 10vh;
     }
 .curtain{
     display: none;
 }
 
-.academics-section h2{
-    font-size: 7.2vh;
-    text-align: center;
-}
-.project-list{
-    flex-direction: column;
-}
-
-.project{
-    width: 90%;
-    height: 80%;
-}
-}
-
-@media (max-width: 768px) {
-    .project {
-        width: 45%; /* more suitable for tablets */
+    #experience h1, .content h1{
+        font-size: 4vh;
     }
+
+    .content p{
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .circle{
+        height: 380px;
+        width: 380px;
+        top: 55%;
+    }
+/* page 2 about page */
+    .page2{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: 80%;
+    }
+    .abt-left{
+        display: none;
+    }
+    .abt-right{
+        width: 100%;
+    }
+
+    .abt-right p{
+        text-align: center;
+        font-size:2vh;
+    }
+
+    .roter{
+        top: 5%;
+        left: 10%;
+        height: 70px;
+        width: 70px;
+    }
+    .right-roter{
+        top: 5%;
+        left: 90%;
+        width: 70px;
+        height: 70px;
+    }
+
+    .crt-top h1{
+        top: 90%;
+        font-size: 10vh;
+    }
+    .crt-btm h1{
+        top: -10%;
+        font-size: 10vh;
+    }
+
 }
 
+@media (max-width: 1440px){
 
+}
 
 
 
