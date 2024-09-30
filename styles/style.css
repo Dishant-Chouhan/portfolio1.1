@@ -5,10 +5,35 @@
 * Browsers: last 4 version
 */
 
-@font-face {
-    font-family: 'ProtestGuerilla';
-    src: url(../assets/fonts/ProtestGuerrilla-Regular.ttf) format('truetype');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.font-1 {
+    font-family: "Fredoka", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
 }
+.font-2 {
+    font-family: "Fredoka", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+.font-3 {
+    font-family: "Fredoka", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+  
+
+@font-face {
+    src: url(../assets/fonts/ProtestGuerrilla-Regular.ttf) format('truetype');
+    font-family: 'ProtestGuerilla';
+} 
 
 
 * {
@@ -354,6 +379,7 @@ main {
 
 .content{
     width: 30%;
+    padding: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -594,7 +620,7 @@ main {
 
 .abt-right p{
     width: 90%;
-    text-align: center;
+    text-align: justify !important;
     margin-top: 8%;
     font-size: 1.5vw;
 }
@@ -973,6 +999,7 @@ main {
 
 .project {
     width: 30%;
+    min-width: 300px;
     margin: 10px;
     background-color: #fff;
     border-radius: 8px;
@@ -1176,18 +1203,31 @@ footer p {
 
     .page3 p{
         font-size: 2vh;
+        width: 75%;
+        text-align: justify;
+        margin-top: 5%;
+    }
+    .page4 .academics-section{
+        width: 100%;
+    }
+    .page4 .academics-section .timeline {
+        width: 100%;
+    }
+
+    .page5 .skills .skills-section {
+        width: 90%;
     }
 .swiper{
     margin-top: 20%;
 }
 
     .roter{
-        height: 80px;
-        width: 80px;
+        height: 50px;
+        width: 50px;
     }
     .right-roter{
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
     .crt-btm h1{
         font-size: 10vh;
@@ -1239,14 +1279,16 @@ footer p {
     }
 
     .roter{
-        top: 20%;
-        height: 100px;
-        width: 100px;
+        top: 5%;
+        left: 10%;
+        height: 70px;
+        width: 70px;
     }
     .right-roter{
-        top: 20%;
-        width: 100px;
-        height: 100px;
+        top: 5%;
+        left: 90%;
+        width: 70px;
+        height: 70px;
     }
 
     .crt-top h1{
