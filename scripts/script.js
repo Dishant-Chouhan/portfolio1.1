@@ -77,7 +77,6 @@ var tl3 = gsap.timeline({
         end: "bottom -100%",
         scrub: 2,
         pin: true,
-        markers:true
     }
 });
  tl3.from(".certifications",{
