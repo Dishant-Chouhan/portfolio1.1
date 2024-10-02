@@ -843,17 +843,17 @@ main {
 }
 
 .academics-section h1 {
-    font-size: 70px;
+    font-size: 6vw;
     opacity: .8;
 }
 
-.graduation{
+.graduation {
     height: 30%;
     width: 80%;
     display: flex;
 }
 
-.grad-left{
+.grad-left {
     width: 30%;
     height: 100%;
     background: url("/assets/images/Medicaps.png");
@@ -861,7 +861,7 @@ main {
     pointer-events: none;
 }
 
-.grad-right{
+.grad-right {
     width: 70%;
     height: 100%;
     padding: 15px 25px;
@@ -869,28 +869,30 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-.grad-right h1{
-    font-size: 30px;
+
+.grad-right h1 {
+    font-size: 3.5vw;
     pointer-events: none;
 }
 
-.grad-right h3{
-    font-size: 20px;
+.grad-right h3 {
+    font-size: 1.5vw;
     pointer-events: none;
 }
 
-.grad-right p{
-    font-size: 15px;
+.grad-right p {
+    font-size: 1.5vw;
     color: #0056b3;
     pointer-events: none;
 }
-.high-school{
+
+.high-school {
     height: 30%;
     width: 80%;
     display: flex;
 }
 
-.high-left{
+.high-left {
     width: 30%;
     height: 100%;
     background: url("https://th.bing.com/th/id/OIP.9edPU2DIsaKEtkvcYoVQFgHaHZ?w=169&h=180&c=7&r=0&o=5&pid=1.7");
@@ -899,7 +901,7 @@ main {
     pointer-events: none;
 }
 
-.high-right{
+.high-right {
     width: 70%;
     height: 100%;
     padding: 15px 25px;
@@ -907,25 +909,28 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-.high-right h1{
-    font-size: 30px;
+
+.high-right h1 {
+    font-size: 3.5vw;
     pointer-events: none;
 }
 
-.high-right h3{
-    font-size: 20px;
+.high-right h3 {
+    font-size: 1.5vw;
     pointer-events: none;
 }
-.high-right p{
+
+.high-right p {
     color: #0056b3;
-    font-size: 15px;
+    font-size: 1.2vw;
     pointer-events: none;
 }
-.high-school :hover{
+
+.high-school :hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.graduation :hover{
+.graduation :hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -1274,30 +1279,96 @@ footer p {
         /* almost full width on small screens */
     }
 
-    .skills-section{
+    .skills-section {
         height: 110%;
     }
-    .sections ol{
-    width: 100%;
+
+    .sections ol {
+        width: 100%;
         gap: 1vh;
     }
 
-    .DBMS{
+    .DBMS {
         height: 36%;
     }
 
-    .Languages{
+    .Languages {
         height: 20%;
     }
 
-    .big-data{
+    .big-data {
         height: 30%;
     }
-    .ETL{
+
+    .ETL {
         height: 25%;
     }
-    .ml-da{
+
+    .ml-da {
         height: 50%;
+    }
+
+    .graduation {
+        flex-direction: column;
+        height: 40%;
+
+    }
+
+    .grad-left {
+        width: 100%;
+    }
+
+    .grad-right {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .grad-right h1 {
+        font-size: 3.5vh;
+        pointer-events: none;
+    }
+
+    .grad-right h3 {
+        font-size: 1.5vh;
+        pointer-events: none;
+    }
+
+    .grad-right p {
+        font-size: 1.5vh;
+        color: #0056b3;
+        pointer-events: none;
+    }
+
+    .high-school {
+        flex-direction: column;
+        height: 40%;
+    }
+
+    .high-left {
+        width: 100%;
+    }
+
+    .high-right {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .high-right h1 {
+        font-size: 3.5vh;
+        pointer-events: none;
+    }
+
+    .high-right h3 {
+        font-size: 1.5vh;
+        pointer-events: none;
+    }
+
+    .high-right p {
+        color: #0056b3;
+        font-size: 1.2vh;
+        pointer-events: none;
     }
 }
 
@@ -1450,7 +1521,14 @@ footer p {
         font-size: 10vh;
     }
 
-    .page5{
+    .page5 {
         height: 100%;
     }
+}
+
+@media (max-width: 800px) { 
+    .curtain{
+        display: none;
+    }
+
 }
