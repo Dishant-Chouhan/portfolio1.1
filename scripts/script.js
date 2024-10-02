@@ -73,14 +73,15 @@ var tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: ".page5",
         scroller: "body",
-        start: "top 0%",
+        start: "0% 0%",
         end: "bottom -100%",
         scrub: 2,
-        pin: true
+        pin: true,
+        markers:true
     }
 });
  tl3.from(".certifications",{
-    y:"100%",
+    y:"300%",
  })
  tl3.from(".projects",{
     y:"300%",
@@ -90,3 +91,35 @@ var tl3 = gsap.timeline({
  })
 })
 
+var tl4;
+
+if(window.innerWidth < 400) {
+    
+    tl4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".skills-section",
+        scroller: "body",
+        start: "200% center", // Adjust the start point for small screens
+        end: "355% center",   // Adjust the end point for small screens
+        scrub: 2,
+      }
+    });
+}
+else{
+
+    tl4 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".skills-section",
+            scroller: "body",
+            start: "150% center",
+            end: "250% center",
+            scrub: 2,
+        }
+    });
+}
+
+    tl4.from("#li", {
+        stagger: 0.5,
+        opacity: 0,
+        y: 100,
+    })

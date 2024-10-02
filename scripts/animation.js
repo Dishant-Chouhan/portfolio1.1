@@ -57,4 +57,3 @@ tl1.to(".right-roter", {
     rotate:360,
 },"a");
 
-
