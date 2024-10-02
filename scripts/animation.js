@@ -48,7 +48,7 @@ tl1 = gsap.timeline({
     }
 })
 tl1.to(".card-container", {
-    x: "-550%",
+    x: "-688%",
 },"a");
 tl1.to(".roter", {
     rotate:360,

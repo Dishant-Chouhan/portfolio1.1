@@ -833,59 +833,103 @@ main {
 }
 
 .academics-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.academics-section h1 {
+    font-size: 70px;
+    opacity: .8;
+}
+
+.graduation{
+    height: 30%;
     width: 80%;
-    background-color: #F3F4F8;
-    /* Light grey background */
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
+    display: flex;
 }
 
-.academics-section h2 {
-    text-align: center;
-    color: #000;
-    font-size: 24px;
+.grad-left{
+    width: 30%;
+    height: 100%;
+    background: url("/assets/images/Medicaps.png");
+    background-size: cover;
+    pointer-events: none;
 }
 
-.timeline {
+.grad-right{
+    width: 70%;
+    height: 100%;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grad-right h1{
+    font-size: 30px;
+    pointer-events: none;
+}
+
+.grad-right h3{
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.grad-right p{
+    font-size: 15px;
+    color: #0056b3;
+    pointer-events: none;
+}
+.high-school{
+    height: 30%;
     width: 80%;
-    margin: auto;
+    display: flex;
 }
 
-.timeline-item {
-    background-color: #fff;
-    /* White background for each item */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    padding: 15px;
-    border-left: 5px solid #206596;
-    /* Blue accent on the left */
-    cursor: pointer;
-    position: relative;
+.high-left{
+    width: 30%;
+    height: 100%;
+    background: url("https://th.bing.com/th/id/OIP.9edPU2DIsaKEtkvcYoVQFgHaHZ?w=169&h=180&c=7&r=0&o=5&pid=1.7");
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
 }
 
-.timeline-item h3 {
-    color: #333;
-    /* Dark grey color for headings */
+.high-right{
+    width: 70%;
+    height: 100%;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.high-right h1{
+    font-size: 30px;
+    pointer-events: none;
 }
 
-.timeline-item .year {
-    color: #666;
-    /* Light grey color for year */
-    font-style: italic;
+.high-right h3{
+    font-size: 20px;
+    pointer-events: none;
+}
+.high-right p{
+    color: #0056b3;
+    font-size: 15px;
+    pointer-events: none;
+}
+.high-school :hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.details {
-    display: none;
-    padding: 10px;
-    font-size: 14px;
-    color: #555;
-    /* Medium grey color for text */
+.graduation :hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.details p {
-    margin: 5px 0;
-}
-
+/* page 5 */
 
 .page5 {
     height: 100%;
@@ -1322,18 +1366,6 @@ footer p {
         margin-top: 5%;
     }
 
-    .page4 .academics-section {
-        width: 100%;
-    }
-
-    .page4 .academics-section .timeline {
-        width: 100%;
-    }
-
-    .page5 .skills .skills-section {
-        width: 90%;
-    }
-
     .swiper {
         margin-top: 20%;
     }
@@ -1418,4 +1450,7 @@ footer p {
         font-size: 10vh;
     }
 
+    .page5{
+        height: 100%;
+    }
 }
