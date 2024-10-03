@@ -79,9 +79,6 @@ var tl3 = gsap.timeline({
         pin: true,
     }
 });
- tl3.from(".certifications",{
-    y:"300%",
- })
  tl3.from(".projects",{
     y:"300%",
  })
@@ -98,8 +95,8 @@ if(window.innerWidth < 400) {
       scrollTrigger: {
         trigger: ".skills-section",
         scroller: "body",
-        start: "200% center", // Adjust the start point for small screens
-        end: "355% center",   // Adjust the end point for small screens
+        start: "100% center", // Adjust the start point for small screens
+        end: "200% center",   // Adjust the end point for small screens
         scrub: 2,
       }
     });

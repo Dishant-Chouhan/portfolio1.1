@@ -908,7 +908,7 @@ main {
 .high-left {
     width: 30%;
     height: 100%;
-    background: url("https://th.bing.com/th/id/OIP.9edPU2DIsaKEtkvcYoVQFgHaHZ?w=169&h=180&c=7&r=0&o=5&pid=1.7");
+    background: url("/assets/images/SSA.png");
     background-size: cover;
     background-position: center;
     pointer-events: none;
@@ -1020,51 +1020,120 @@ main {
 }
 
 .certifications {
+    margin-top: 5%;
     height: 100%;
     width: 100%;
-    z-index: +6;
-    position: absolute;
-    top: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fafafa;
-    overflow-y: auto;
+    flex-direction: column;
 }
 
-.certifications-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.certifications-section h2 {
+#heading-cert {
+    font-size: 6vw;
+    opacity: .8;
     text-align: center;
-    color: #333;
 }
 
-.certifications-section ul {
-    list-style-type: none;
-    padding: 0;
+.certificates{
+    height: 80%;
+    width: 98%;
 }
 
-.certifications-section li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #4CAF50;
+.cert-section{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.certifications-section .year {
-    font-style: italic;
-    float: right;
+.cert-left{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    padding: 25px 25px;
 }
 
-.certifications-section p {
-    margin: 5px 0 0;
-    font-size: 14px;
+.cert-left h1{  
+    font-size: 3vw;
+    opacity: .8;
+    text-align: left;
+}
+
+.cert-right{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-right a{
+    text-decoration: none;
+}
+
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #006aff;
+  border: 8px solid #c0dfff;
+  color: white;
+  gap: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#text {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#svg {
+  padding-top: 5px;
+  height: 100%;
+  width: fit-content;
+}
+#svg svg {
+  width: 50px;
+  height: 30px;
+}
+#button:hover {
+  border: 8px solid #b1d8ff;
+  background-color: #1b7aff;
+}
+#button:active {
+  border: 5px solid #c0dfff;
+}
+#button:hover #svg svg {
+  animation: jello-vertical 0.9s both;
+  transform-origin: left;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .projects {
@@ -1271,56 +1340,6 @@ footer p {
 
 
 @media (max-width: 480px) {
-    .certifications-section ul {
-        margin-top: 15%;
-    }
-
-    .project-list {
-        margin-top: 21%;
-    }
-
-    .project {
-        margin-top: 10%;
-        width: 90%;
-        /* takes more space on smaller screens */
-    }
-
-    .modal-content {
-        margin: 10% auto;
-        /* adjusted for mobile visibility */
-        width: 95%;
-        /* almost full width on small screens */
-    }
-
-    .skills-section {
-        height: 110%;
-    }
-
-    .sections ol {
-        width: 100%;
-        gap: 1vh;
-    }
-
-    .DBMS {
-        height: 36%;
-    }
-
-    .Languages {
-        height: 20%;
-    }
-
-    .big-data {
-        height: 30%;
-    }
-
-    .ETL {
-        height: 25%;
-    }
-
-    .ml-da {
-        height: 50%;
-    }
-
     .graduation {
         flex-direction: column;
         height: 40%;
@@ -1383,6 +1402,87 @@ footer p {
         font-size: 1.2vh;
         pointer-events: none;
     }
+
+
+    .project-list {
+        margin-top: 21%;
+    }
+
+    .project {
+        margin-top: 10%;
+        width: 90%;
+        /* takes more space on smaller screens */
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        /* adjusted for mobile visibility */
+        width: 95%;
+        /* almost full width on small screens */
+    }
+
+    .first{
+        height: 8%;
+        align-items: center;
+    }
+
+    .skills-section {
+        height: 200%;
+        background-color: rebeccapurple;
+    }
+
+    .sections ol {
+        width: 100%;
+        gap: 1vh;
+    }
+
+    .DBMS {
+        height: 20%;
+    }
+
+    .Languages {
+        height: 10%;
+    }
+
+    .big-data {
+        height: 17%;
+    }
+
+    .ETL {
+        height: 15%;
+    }
+
+    .ml-da {
+        height: 30%;
+    }
+
+    .certifications{
+        height: 150%;
+    }
+
+    .cert-section{
+        flex-direction: column;
+    }
+
+
+    .cert-left h1{
+        font-size: 2.5vh;
+    }
+    .cert-left p{
+        font-size: 1.5vh;
+    }
+
+    .cert-left{
+        width: 100%;
+    }
+    .cert-right{
+        width: 100%;
+    }
+
+    #heading-cert {
+        font-style:2vh;
+    }
+
 }
 
 @media (max-width: 600px) {
