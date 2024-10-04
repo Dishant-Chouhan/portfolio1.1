@@ -237,7 +237,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #000;
     /* Sophisticated dark background */
     z-index: 999;
     -webkit-transform: scale(0) translateX(100%);
@@ -263,6 +263,7 @@ main {
     transform: scale(1) translateX(0);
     opacity: 1;
     visibility: visible;
+    overflow-y: hidden;
 }
 
 /* Navigation links in the Menu Tray */
@@ -1427,8 +1428,7 @@ footer p {
     }
 
     .skills-section {
-        height: 200%;
-        background-color: rebeccapurple;
+        height: 150%;
     }
 
     .sections ol {
@@ -1445,11 +1445,11 @@ footer p {
     }
 
     .big-data {
-        height: 17%;
+        height: 20%;
     }
 
     .ETL {
-        height: 15%;
+        height: 12%;
     }
 
     .ml-da {

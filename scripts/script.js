@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuIcon.addEventListener('click', () => {
         menuTray.classList.toggle('active');
+        document.querySelector("body").classList.toggle('active');
 
         if (menuTray.classList.contains('active')) {
             menuIcon.classList.replace('ri-menu-3-line', 'ri-close-line');
@@ -95,9 +96,10 @@ if(window.innerWidth < 400) {
       scrollTrigger: {
         trigger: ".skills-section",
         scroller: "body",
-        start: "100% center", // Adjust the start point for small screens
-        end: "200% center",   // Adjust the end point for small screens
+        start: "150% center", // Adjust the start point for small screens
+        end: "250% center",   // Adjust the end point for small screens
         scrub: 2,
+        // markers: true
       }
     });
 }
