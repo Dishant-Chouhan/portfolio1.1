@@ -31,9 +31,6 @@
   font-variation-settings: "wdth" 100;
 }
 
-.overflow {
-  overflow: hidden;
-}
 
 @font-face {
   src: url(../assets/fonts/ProtestGuerrilla-Regular.ttf) format("truetype");
@@ -51,6 +48,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 img {
@@ -1279,6 +1277,10 @@ main {
 
 /* projects section ended */
 
+.pin-spacer{
+    height: 100%;
+    width: 100%;
+}
 .page5 {
   width: 100%;
   height: 100%;
@@ -1311,59 +1313,244 @@ main {
   }
 }
 
-
-
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: #f4f4f4;
-  padding: 40px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    color: #333;
+  }
+  
+  .contact-section p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .contact-section form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    /* Adds padding and border to element's total width and height */
+  }
+  
+  .contact-section textarea {
+    resize: none;
+  }
+  
+  .contact-section button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+footer {
+    color:#FFF;
+    background-color: #333;
+    padding: 40px 0;
 }
 
-.contact-section h2 {
-  color: #333;
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.contact-section p {
-  margin-bottom: 20px;
-  color: #666;
+.connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
 }
 
-.contact-section form {
-  max-width: 600px;
-  margin: auto;
+.connect h1 {
+    font-size: 2em;
 }
 
-.contact-section input,
-.contact-section textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  /* Adds padding and border to element's total width and height */
+.hire-me-btn {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
 }
 
-.contact-section textarea {
-  resize: none;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
 }
 
-.contact-section button {
-  background-color: #0056b3;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  cursor: pointer;
+.footer-content > div {
+    flex: 1;
+    padding: 0 15px;
 }
 
+.logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.logo p {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.navigation ul,
+.contact ul {
+    list-style: none;
+}
+
+.navigation ul li,
+.contact ul li {
+    margin: 10px 0;
+}
+
+.navigation a,
+.contact a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.newsletter button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-bottom ul li {
+    margin-left: 20px;
+}
+
+.footer-bottom ul a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content > div {
+        padding: 20px 0;
+    }
+
+    .hire-me-btn {
+        padding: 8px 15px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .connect {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .connect h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .hire-me-btn {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+
+    .footer-content > div {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-bottom ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
 
 .crt-btm {
   position: absolute;
