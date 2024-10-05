@@ -60,6 +60,7 @@ img {
 }
 
 a{
+    text-decoration: none;
     color: #0056b3;
 }
 /* Custom styles go below */
@@ -1465,20 +1466,9 @@ footer {
     text-decoration: none;
 }
 
-.newsletter input[type="email"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 70%;
-}
-
-.newsletter button {
-    background-color: #00aaff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+i{
+    color: #fff;
+    font-size: 30px;
 }
 
 .footer-bottom {
