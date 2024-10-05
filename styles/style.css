@@ -1273,15 +1273,45 @@ main {
     text-decoration: underline;
 }
 
+.experience {
+    max-width: 800px; /* Set max width for content */
+    margin: 40px auto; /* Centered horizontally */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the experience card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
+h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker text color */
+}
+
+.experience-item {
+    margin-bottom: 20px; /* Space between experience items */
+}
+
+h3 {
+    color: #007BFF; /* Blue color for job title */
+}
+
+h4 {
+    color: #555; /* Gray color for company and date */
+    margin: 5px 0; /* Small margin for spacing */
+}
+
+ul {
+    list-style-type: disc; /* Use bullets */
+    margin-left: 20px; /* Indentation for list */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
 
 /* projects section ended */
 
-.pin-spacer{
-    height: 100%;
-    width: 100%;
-}
-.page5 {
+.page10 {
   width: 100%;
   height: 100%;
   background: lightblue;
@@ -1289,7 +1319,7 @@ main {
   overflow: hidden;
 }
 
-.page5::before {
+.page10::before {
   content: "";
   position: absolute;
   top: -50%;

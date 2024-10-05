@@ -70,7 +70,7 @@ tl2.to(".crt-top",{
 
 var tl3 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".page5",
+        trigger: ".page10",
         scroller: "body",
         start: "0% 0%",
         end: "bottom -100%",
