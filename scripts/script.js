@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuIcon.addEventListener('click', () => {
         menuTray.classList.toggle('active');
-        document.querySelector("body").classList.toggle('active');
-
         if (menuTray.classList.contains('active')) {
             menuIcon.classList.replace('ri-menu-3-line', 'ri-close-line');
             menuIconContainer.style.backgroundColor = "#000000";
@@ -80,10 +78,7 @@ var tl3 = gsap.timeline({
         pin: true,
     }
 });
- tl3.from(".projects",{
-    y:"300%",
- })
- tl3.from(".contact-footer",{
+ tl3.from(".contact-section",{
     y:"100%",
  })
 })
@@ -94,7 +89,7 @@ if(window.innerWidth < 400) {
     
     tl4 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".skills-section",
+        trigger: ".skills-section-mobile",
         scroller: "body",
         start: "150% center", // Adjust the start point for small screens
         end: "250% center",   // Adjust the end point for small screens

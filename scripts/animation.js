@@ -28,6 +28,16 @@ gsap.from(".image",{
         scroller: "body"
     }
 })
+
+gsap.from("#button",{
+    scale:0,
+    duration:.5,
+    scrollTrigger:{
+        trigger: "#button",
+        scroller: "body"
+    }
+})
+
 gsap.from(".abt-right p",{
     scale:0,
     stagger: true,
