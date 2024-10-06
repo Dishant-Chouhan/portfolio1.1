@@ -1427,13 +1427,16 @@ main {
   }
   
   .contact-section form {
-    max-width: 600px;
+    width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .contact-section input,
   .contact-section textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -1454,6 +1457,17 @@ main {
     text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .inp-section{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .inp-section label{
+    opacity: .5;
   }
   
 
@@ -1630,6 +1644,16 @@ i{
     .footer-bottom ul li {
         margin-left: 0;
         margin-bottom: 10px;
+    }
+
+.contact-section form{
+  width: 100%;
+  margin: auto;
+}
+
+    .inp-section{
+      width: 100%;
+      flex-direction: column;
     }
 }
 
