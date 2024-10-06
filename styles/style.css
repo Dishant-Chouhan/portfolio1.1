@@ -1151,7 +1151,6 @@ main {
 /* Main Projects Section */
 .projects {
     background: #F3F4F8;
-    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1184,7 +1183,8 @@ main {
 /* Individual Project Cards */
 .project {
     width: 30%;
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     min-width: 280px;
     margin: 15px;
     background-color: #fff;
@@ -1197,6 +1197,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#project3{
+  min-height: 350px;
 }
 
 /* Hover effect for project: scale and shadow */
