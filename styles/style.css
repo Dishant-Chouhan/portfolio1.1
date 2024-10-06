@@ -948,15 +948,7 @@ main {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* page 5 */
 
-.page5 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: +5;
-  overflow: hidden;
-}
 
 .skills-section {
   height: 150%;
@@ -972,7 +964,7 @@ main {
 }
 
 .first h1 {
-  font-size: 100px;
+  font-size: 5.6vw;
   opacity: 0.8;
   text-transform: uppercase;
 }
@@ -1275,7 +1267,8 @@ main {
 }
 
 .experience {
-    max-width: 800px; /* Set max width for content */
+  height: max-content;
+    width: 100%;
     margin: 40px auto; /* Centered horizontally */
     padding: 20px;
     background-color: #ffffff; /* White background for the experience card */
@@ -1283,33 +1276,101 @@ main {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.experience h2 {
+.experience h1 {
+   font-size: 5.6vw;
     text-align: center; /* Center the heading */
     color: #333; /* Darker text color */
 }
 
-.experience-item {
-    margin-bottom: 20px; /* Space between experience items */
+.experience-slot {
+  height: 100px;
+  width: 40%;
+  background-color: #00aaff;
+  margin-top: 5%;
+  margin-left: 10%;
+  display: flex;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
 }
 
-.experience h3 {
-    color: #007BFF; /* Blue color for job title */
+.experience-slot:nth-of-type(even){
+  margin-left: 60%;
+} 
+
+.experience-left{
+  height: 100%;
+  width: 20%;
+  background-color: #37474f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.experience h4 {
-    color: #555; /* Gray color for company and date */
-    margin: 5px 0; /* Small margin for spacing */
+.experience-left h1{
+  color: #fff;
+  font-size: 3vw;
+  opacity:.8 ;
 }
 
-.experience ul {
-    list-style-type: disc; /* Use bullets */
-    margin-left: 20px; /* Indentation for list */
+.experience-right{
+  height: 100%;
+  width: 80%;
+  background-color: #f3f3f3;
+  display: flex;
 }
 
-.experience li {
-    margin-bottom: 10px; /* Space between list items */
+.details{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left:2px;
 }
 
+.details h2{
+  font-size: 1.5vw;
+}
+
+.details h3{
+  font-size: 1vw;
+}
+
+.details h4{
+  font-size: 1vw;
+}
+
+.drop{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drop details summary i{
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.drop details summary{
+  list-style: none;
+}
+
+.drop details ul{
+  width: 100%;
+  list-style: none;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  padding: 2px 10px;
+  background-color: #f3f3f3;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: +5;
+}
 /* projects section ended */
 
 .page10 {
@@ -1732,7 +1793,7 @@ i{
   }
 
   .cert-left h1 {
-    font-size: 2.5vh;
+    font-size:4vh;
   }
 
   .cert-left p {
@@ -1751,7 +1812,35 @@ i{
     font-style: 2vh;
   }
 
+.experience-slot{
+  width: 100%;
+  margin-left: 0%;
+}
 
+.experience h1{
+  font-size: 4vh;
+}
+
+.experience-left h1{
+  font-size: 3vh;
+}
+.drop details ul{
+  width: 100%;
+  font-size: 2vh;
+}
+
+
+.details h2{
+  font-size: 3vh;
+}
+
+.details h3{
+  font-size: 2vh;
+}
+
+.details h4{
+  font-size: 1.5vh;
+}
 }
 
 @media (max-width: 600px) {

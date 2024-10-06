@@ -91,7 +91,7 @@ if(window.innerWidth < 400) {
       scrollTrigger: {
         trigger: ".skills-section-mobile",
         scroller: "body",
-        start: "150% center", // Adjust the start point for small screens
+        start: "200% center", // Adjust the start point for small screens
         end: "250% center",   // Adjust the end point for small screens
         scrub: 2,
         // markers: true
@@ -116,3 +116,15 @@ else{
         opacity: 0,
         y: 100,
     })
+
+    var dropDown = document.querySelector(".drop details summary ");
+    var count = 0;
+    dropDown.onclick = function () {
+        if (count == 0) {
+            dropDown.innerHTML = '<i class="ri-arrow-right-wide-line"></i>'
+            count = 1;
+        } else {
+            dropDown.innerHTML = '<i class="ri-arrow-down-wide-line"></i>';
+            count = 0; 
+    }
+    }
