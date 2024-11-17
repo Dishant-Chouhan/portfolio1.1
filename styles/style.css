@@ -1035,7 +1035,7 @@ main {
 }
 
 .certificates {
-  height: 80%;
+  min-height: 80%;
   width: 98%;
 }
 
