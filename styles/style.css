@@ -33,7 +33,7 @@
 
 
 @font-face {
-  src: url(../assets/fonts/ProtestGuerrilla-Regular.ttf) format("truetype");
+  src: url(/portfolio1.1/assets/fonts/ProtestGuerrilla-Regular.ttf) format("truetype");
   font-family: "ProtestGuerilla";
 }
 
@@ -758,7 +758,7 @@ main {
 .roter {
   height: 200px;
   width: 200px;
-  background: url("/assets/images/wheel.png");
+  background: url("/portfolio1.1/assets/images/wheel.png");
   background-size: cover;
   position: absolute;
   top: 26%;
@@ -771,7 +771,7 @@ main {
 .right-roter {
   height: 200px;
   width: 200px;
-  background: url("/assets/images/wheel.png");
+  background: url("/portfolio1.1/assets/images/wheel.png");
   background-size: cover;
   position: absolute;
   top: 26%;
@@ -858,7 +858,7 @@ main {
 .grad-left {
   width: 30%;
   height: 100%;
-  background: url("/assets/images/Medicaps.png");
+  background: url("/portfolio1.1/assets/images/Medicaps.png");
   background-size: cover;
   pointer-events: none;
 }
@@ -909,7 +909,7 @@ main {
 .high-left {
   width: 30%;
   height: 100%;
-  background: url("/assets/images/SSA.png");
+  background: url("/portfolio1.1/assets/images/SSA.png");
   background-size: cover;
   background-position: center;
   pointer-events: none;
