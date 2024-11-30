@@ -1087,6 +1087,24 @@ main {
   transition: all 0.3s;
 }
 
+.cert-section .show-more-button {
+  color: #189efe;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid #189efe;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.cert-section .show-more-button:hover {
+  background-color: #189efe;
+  color: white;
+  cursor: pointer;
+}
+
 #text {
   font-weight: 700;
   letter-spacing: 1px;
