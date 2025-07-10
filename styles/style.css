@@ -1167,6 +1167,7 @@ main {
 
 /* projects section */
 /* Main Projects Section */
+/* Projects Section */
 .projects {
     background: #F3F4F8;
     width: 100%;
@@ -1176,7 +1177,7 @@ main {
     flex-direction: column;
 }
 
-/* Projects Section Styling */
+/* Projects Container Styling */
 .projects-section {
     width: 100%;
     background-color: #f4f4f4;
@@ -1190,19 +1191,17 @@ main {
     flex-direction: column;
 }
 
-/* Project List Flexbox Layout */
+/* Project List Layout */
 .project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
-/* Individual Project Cards */
+/* Project Card Styling */
 .project {
     width: 30%;
-    min-height: 300px;
-    height: auto;
     min-width: 280px;
     margin: 15px;
     background-color: #fff;
@@ -1213,42 +1212,49 @@ main {
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-#project3{
-  min-height: 350px;
+/* For taller projects if needed */
+#project3 {
+    min-height: 350px;
 }
 
-/* Hover effect for project: scale and shadow */
+/* Hover Effect */
 .project:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Images */
-.pro-image{
-    height: 100%;
-    width: 100%;
-}
-.pro-image img {
+/* Image Container */
+.pro-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Project Images */
+.pro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+    aspect-ratio: 16 / 9;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    position: relative;
-    z-index: 0;
 }
 
-.pro-image h4{
-    z-index: +5;
-    margin-top: -2%;
-    padding: 2px 10px;
+
+/* Project Heading Below Image */
+.pro-image h4 {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #189efe;
 }
 
-/* Project Info Section (Initially Hidden) */
+/* Hidden Info Panel */
 .project-info {
     padding: 20px;
     position: absolute;
@@ -1260,12 +1266,12 @@ main {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover Effect to Reveal Project Info */
+/* Slide Info on Hover */
 .project:hover .project-info {
     bottom: 0;
 }
 
-/* Text Inside the Project Info */
+/* Info Text Styling */
 .project-info h3 {
     color: #189efe;
     font-size: 1.5em;
@@ -1287,6 +1293,7 @@ main {
 .project-info a:hover {
     text-decoration: underline;
 }
+
 
 .experience {
   height: max-content;
