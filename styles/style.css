@@ -437,8 +437,8 @@ main {
 
 /* profile image circle*/
 .circle img {
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 95%;
   position: absolute;
   bottom: 15%;
 }
@@ -985,7 +985,7 @@ main {
 .sections ol {
   list-style: none;
   margin-top: 2%;
-  width: 50%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
